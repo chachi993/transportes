@@ -1,0 +1,315 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #feedc5;
+  color: #1e272e;
+}
+
+body {
+   font-family: "Oswald", sans-serif; 
+  background-color: #feedc5;
+  /* background-image: url("img/fondo.jpg"); */
+  color: #1e272e;
+  color: #feedc5;;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.nav-menu {
+  float: right;
+}
+.nav-menu a {
+  font-size: 9px;
+}
+.main {
+  text-align: center;
+}
+ .banner {
+  height: 90vh;
+  background: url(https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1175&q=80)
+    center 0 no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: black 4px solid;
+  overflow: hidden;
+}
+.titulo {
+  color: rgb(0, 0, 0);
+  font-size: 10.3em;
+  padding-top: 0.2em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 15px;
+}
+
+.lema {
+  color: #24221e;
+  font-size: 2.3em;
+  text-align: center;
+  padding-top: 45px;
+  font-family: "Lato";
+  padding: 20px;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  float: left;
+  width: 70px;
+}
+
+#btnCerrarSesion{
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.logo-nav-container {
+  position: relative;
+  background: #66806A;
+  border-bottom: black 2px solid;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input:focus,
+a:focus {
+  outline: 0;
+}
+
+.nav-menu {
+  max-width: 90%;
+  float: center;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu ul {
+  list-style: none;
+  background: #66806A;
+}
+
+.nav-menu li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  background: #66806A;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 3.6em;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #66806A;
+}
+
+.nav-menu a:hover {
+  color: #FFC286;
+}
+.formRegistroPersona,
+.formRegistroEmpresa,
+.ingresar,
+.administradorIngresar,
+.administradorTransporte,
+.administradorListado,
+.administradorEstadistica,
+.personaLogin,
+.personaSolicitudes,
+.personaEstadistica,
+.empresaPendientes,
+.empresaTomadas,
+.empresaEstadistica,
+.cuerpo{
+  top: 30px;
+  background-color: #feedc5;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.boton {
+  float: left;
+  margin-left: 50px;
+}
+h3,
+select,
+table,
+tr,
+th,
+td {
+  background-color: rgb(235, 234, 219);
+}
+p {
+  font-weight: bold;
+}
+table {
+  margin: 0 auto;
+}
+:placeholder-shown, button, input[type="button"]{
+  background-color:rgb(235, 229, 229);
+}
+.fotosProducto{
+  height: 50px;
+}
+.cuerpo{
+  position: relative;
+}
+
+table td, th{
+padding: 10px;
+}
+
+footer{
+  width: 100%;
+  background: #feedc5;
+  color: white;
+  font-family: 'Lato';  
+}
+
+iframe{
+  height: 50%;
+}
+
+footer h1{
+font-family: 'Big Shoulders Display';
+padding-bottom: 20px;
+}
+
+.container-footer-all{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+padding: 40px;
+height: 100px;
+}
+
+.container-body{
+display: flex;
+justify-content: space-between;
+}
+
+.colum1{
+max-width: 400px;
+}
+
+.colum1 h1{
+font-size: 22px;
+}
+
+.colum1 p{
+font-size: 14px;
+color: #1d1818;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.colum2{
+max-width: 400px;
+
+}
+
+.colum2 h1{
+font-size: 22px;
+}
+
+.rowdani{
+display: flex;
+}
+
+.rowdani img{
+width: 36px;
+height: 36px;
+}
+
+.rowdani label{
+margin-top: 10px;
+margin-left: 20px;
+color: #1d1515;
+}
+
+.colum3{
+max-width: 400px;
+color: #fff;
+}
+
+.colum3 h1{
+font-size: 22px;
+}
+
+.row2{
+margin-top: 20px;
+display: flex;
+}
+
+.row2 img{
+width: 36px;
+height: 36px;
+}
+
+.row2 label{
+margin-top: 10px;
+margin-left: 20px;
+max-width: 140px;
+}
+
+.container-footer{
+width: 100%;  
+background: #feedc5;
+}
+
+.footer{
+max-width: 1200px;
+margin: auto;
+display: flex;
+justify-content: space-between;  
+padding: 20px;
+}
+
+.copyright{
+color: #C7C7C7;
+}
+
+.copyright a{
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+
+.information a{
+text-decoration: none;
+color: #C7C7C7;
+}

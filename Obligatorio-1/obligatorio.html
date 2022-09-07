@@ -1,0 +1,442 @@
+<!DOCTYPE HTML>
+<!-- Permite al navegador entender qué versión de HTML estamos utilizando -->
+
+<html>
+	<head>
+        <!-- Indica la codificación de caracteres utilizada -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Font --> <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap
+        " rel="stylesheet">
+         <!-- Font Awesome para los iconos que se usaron  -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<!-- Link al archivo de estilos  de css usado -->
+         <link rel="stylesheet" href="style.css" />
+<!-- Titulo de la pagina web -->
+         <title>Transportes FES</title>
+	</head>
+	<body>
+<!--Creamos el menu de la navbar-->
+        <header class="logo-nav-container">
+            <div class="logo"></div>
+            <div class="nav-menu" id = "listaLoginYRegistroBotones">
+                <ul>
+                    <li><a id="btnLogin" href="#login" f>Login</a></li>
+                    <li><a id="btnRegistroPersona" href="#registroPersona">Registro Persona</a></li>
+                    <li><a id="btnRegistroEmpresa" href="#registroEmpresa">Registro Empresa</a></li>
+                </ul>
+            </div>
+            </div>
+        </header>
+<!--Creamos el boton de cerrar sesión para las cuentas -->
+        <div id="btnCerrarSesion">
+            <input type="button" value="CERRAR SESIÓN" id="btnCerrarSesion">
+        </div>
+<!-- Creamos la seccion central donde aparecerá el encabezado, lema e imagen de la pagina -->
+        <main role="main" class = "intro">
+            <section id ="LemaYFoto" class="intro">
+                <article>
+                    <div class="flex-center">
+                        <div class="banner y-flex-center flex-center" id="banner">  
+                            <h1 class="titulo">Transportes  FES</h1>
+                            <h2 class="lema">Llegamos a donde estés</h2>
+                        </div> 
+                    </div>
+                </article>
+            </section>
+            <br><br>
+        </main>
+
+<!--Boton de volver a inicio, vuelve a la pagina principal-->
+        <div id="RegistroYLogin" class="cuerpo">
+            <br><br><br>
+            <input class="boton" type="button" value="VOLVER A INICIO" id="btnVolverAInicio">
+            <br><br><br>
+        </div>
+
+<!--Formulario para registro de usuario PERSONA, se le pide que ingrese datos personales-->
+        <div id="formRegistroPersona" class="cuerpo"> 
+            <br><br><br>
+            <h3>REGISTRARSE - PERFIL PERSONA</h3>
+            <br><br>
+            <P>Llene el formulario para registrarse</P>
+            <br><br>
+            <label>Ingrese C.I. sin espacios, puntos ni guiones:</label> <br><br>
+            <input type="text" id="txtCedula" placeholder="Ej: 12345678"><br><br>
+
+            <label>Ingrese Nombre:</label><br>
+            <input type="text" id="txtNombre" placeholder="Nombre"><br><br>
+
+            <label>Ingrese Apellido:</label><br>
+            <input type="text" id="txtApellido" placeholder="Apellido"><br><br>
+
+            <label>Ingrese Nombre de Usuario:</label><br>
+            <input type="text" id="txtNombreUsuarioPRegistro" placeholder="NombreDeUsuario"><br><br>
+
+            <label>Ingrese Contraseña:</label><br>
+            <input type="password" id="txtContraseñaP" placeholder="Contraseña"><br><br>
+
+            <label>Ingrese Contraseña nuevamente:</label><br>
+            <input type="password" id="txtContraseñaP2" placeholder="Contraseña"><br><br><br>
+            <div id="divRegistroUsuarioMensajes"></div>
+            <br><br><br>
+
+            <input type="button" value="Registrarse" id="btnRegistrarseP">
+            <input type="button" value="Ya estoy registrado" id="btnLoginP">
+            <br><br><br> 
+            <br><br><br>
+        </div>
+
+<!--Formulario para registro de EMPRESA-->
+        <div id="formRegistroEmpresa" class="cuerpo"> 
+            <br><hr><br>
+            <h3>REGISTRARSE - PERFIL EMPRESA</h3>
+            <br><br><br>
+            <P>Llene el formulario para registrarse:</P>
+            <br><br>
+            <label>Ingrese Número RUT</label><br>
+            <input type="text" id="txtRut" placeholder="Ej: 123456789123"><br><br>
+
+            <label>Ingrese Razón Social:</label><br>
+            <input type="text" id="txtRazon" placeholder="Razón Social"><br><br>
+
+            <label>Ingrese Nombre Fantasía:</label><br>
+            <input type="text" id="txtFantasia" placeholder="Nombre Fantasía"><br><br>
+
+            <label>Ingrese Nombre de Usuario:</label><br>
+            <input type="text" id="txtNombreUsuarioE" placeholder="Nombre De Usuario"><br><br>
+
+            <label>Ingrese Contraseña:</label><br>
+            <input type="password" id="txtContraseñaE" placeholder="Contraseña"><br><br>
+
+            <label>Ingrese Contraseña nuevamente:</label><br>
+            <input type="password" id="txtContraseñaE2" placeholder="Contraseña"><br><br>
+
+            <div id = "selectRegistroEmpresa"></div>
+            <br><br><br>
+
+            <div id="divRegistroEmpresaMensajes"></div>
+            <br><br><br>
+            <input type="button" value="Registrarse" id="btnRegistrarseE">
+            <input type="button" value="Ya estoy registrado" id="btnLoginE">
+            <br><br><br>
+            <br><br><br>
+        </div>
+
+<!--Ingreso de EMPRESA a login-->
+        <div id="divLogin" class="cuerpo"> <!--EMPRESA-->
+            <br><hr><br>
+            <h3>INGRESAR USUARIO</h3>
+            <br><br><br>
+            <label>Ingrese Nombre de Usuario:</label><br>
+            <input type="text" id="txtNombreUsuarioELogin" placeholder="Nombre De Usuario"><br><br>
+
+            <label>Ingrese Contraseña:</label><br>
+            <input type="password" id="txtContraseñaIngresoE" placeholder="Contraseña"><br><br>
+
+            <div id = "mensajeLoginEmpresa"></div>
+            <input type="button" value="INGRESAR" id="btnIngresarE">
+            <br><br><br>
+            <br><br><br>
+        </div>
+
+<!--Botones de acceso a funcionalidades de un ADMIN-->
+        <div id="pantallaAdmin" class="cuerpo"> 
+
+            <br><hr><br>
+            <center>
+                <h3>PERFIL ADMINISTRADOR</h3>
+                <br><br><br>
+                <input type="button" value="Administrar Empresas" id="btnAdminempresas">
+                <input type="button" value="Añadir tipos de Transporte" id="btnAniadirTransporte">
+                <input type="button" value="Ver Estadisticas" id="btnVerEstadísticasAdmin">
+            </center>
+        </div>
+
+        <div id = "adminlistadoempresas" class="cuerpo">
+
+            <br><br><br>
+<!--Se enumeran las empresas y hay un buscador para poder buscarlas por razon social o nombre fantasia-->
+            <h3>LISTADO DE EMPRESAS</h3>
+            <br><br><br>
+            <input type="text" placeholder="BUSCAR EMPRESA..." id ="txtBuscarEmpresa">
+            <br>
+            <div id ="mensajeBusqueda"></div>
+            <br>
+            <input type="button" value="BUSCAR" id ="btnBuscarEmpresa">
+            <input type="button" value="MOSTRAR TABLA COMPLETA" id ="btNOBuscarEmpresa">
+            <br><br>
+            <!--Tabla que se visualiza en el usuario ADMIN, en la administración de empresas-->
+            <table border="1">
+                <thead>
+				<tr> 
+					<th>RUT</th>
+					<th>RAZÓN SOCIAL</th>
+					<th>NOMBRE FANTASÍA</th>
+                    <th>USUARIO</th>
+					<th>VEHICULO</th>
+                    <th>ESTADO</th>
+					<th>ACCIONES</th>
+				</tr>
+            </thead>
+            <tbody id="tablaHabilitarEmpresas"></tbody>
+            </table>
+        </div>
+
+<!-- Creación de nuevos vehículos en el perfil ADMIN-->
+        <div id ="adminlistadotransporte"class="cuerpo"> 
+
+            <br><br><br>
+            <h3>Listado de tipos de Transporte</h3>
+            <br><br><br>
+            <div id = "tablaVehiculosAdmin"></div>
+            <br><br><br>
+            <input type="text" id="ingresarVehiculo" placeholder="INGRESAR TIPO DE TRANSPORTE">
+            <input type="button" value="AGREGAR AL LISTADO" id ="btnAgregarVehiculo">
+            <div id = "mensajeAltaVehiculo"></div>
+            <br><br><br>
+        </div>
+
+<!-- Información estadística para ADMIN: Total de kilómetros recorridos por cada Empresa-->
+        <div id = "adminInformacionEstadistica"class="cuerpo"> 
+            <br><br><br>
+            <h3>INFORMACIÓN ESTADÍSTICA</h3>
+            <br><br>
+            <table border="1">
+                <thead>
+                    <tr> 
+                        <th>EMPRESAS</th>
+                        <th>KM</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaAdminInformacionEstadistica"></tbody>
+            </table>
+            <br><br><br>
+        </div>
+
+<!--Botones de acceso a funcionalidades de usuario PERSONA-->
+        <div id="pantallaPersona" class="cuerpo"> 
+
+            <br><hr><br>
+            <center>
+                <h3>PERFIL PERSONA</h3>
+                <br><br><br>
+
+                <input type="button" value="SOLICITAR ENVÍOS" id="btnSolicitarEnvio">
+                <input type="button" value="LISTADO DE PEDIDOS" id="btnListadoPedidosP">
+                <input type="button" value="VER ESTADÍSTICAS" id="btnVerEstadísticasPersona">
+            </center>
+        </div>
+
+<!--Formulario para crear un envío-->
+        <div id ="PersonaSolicitarEnvios" class="cuerpo"> 
+
+           <br><br>
+            <P>Llene el formulario para realizar un envío:</P><br>
+            <br><br><br>
+            <label>Ingrese Descripción del Producto</label><br>
+            <br><br><br>
+            <input type="text" id="txtDescripcionenvio" placeholder="Producto"><br><br>
+            <label>Ingrese distancia en km:</label><br>
+            <input type="number" id="txtDistanciaEnvio" placeholder="Distancia"><br><br>
+            <label>Ingrese imagen:</label><br>
+            <input type="file" id="imagenEnvio" placeholder="imagen Producto"><br><br>
+            <label>Seleccione un vehiculo:</label><br>
+            <div id = "selectSolicitudesEnvios"></div>
+            <br><br><br>
+            <div id = "mensajeSolicitudesEnvios"></div><br><br><br>
+            <input type="button" value="SOLICITAR" id="btnSolicitarEnvioFormulario">
+            <br><br><br>
+            <br><br><br>
+        </div>
+
+<!-- Listado con pedidos ingresados-->
+        <div id ="PersonaListadoSolicitudes" class="cuerpo"> 
+
+            <br><br><br>
+            <h3>LISTADO DE SOLICITUDES</h3>
+            <br><br>
+            <table border="1">
+                <thead>
+                    <tr> 
+                        <th>PRODUCTO</th>
+                        <th>IMAGEN</th>
+                        <th>DISTANCIA</th>
+                        <th>VEHICULO</th>
+                        <th>ESTADO</th>
+                        <th>EMPRESA</th>
+                    </tr>
+                </thead>
+                <tbody  id = "tablaSolicitudesPersona"> </tbody>
+            </table>
+            <br><br><br>
+        </div>
+
+<!--Información estadística de envíos / perfil PERSONA-->
+        <div id ="PersonaInformacionEstadistica" class="cuerpo"> 
+
+            <br><br><br>
+            <h3>INFORMACIÓN ESTADÍSTICA</h3>
+            <br><br>
+            <div id = "mensajeInformaciónEstadistica"></div>
+            <br><br><br>
+        </div>
+
+<!--Botones de acceso a funcionalidades de usuario EMPRESA-->
+        <div id="pantallaEmpresa" class="cuerpo"> 
+
+            <br><hr><br>
+            <center>
+                <h3>PERFIL EMPRESA</h3>
+                <br><br><br>
+                <input type="button" value="Solicitudes Pendientes" id="btnSolicitudesE">
+                <input type="button" value="Solicitudes Tomadas" id="btnListadoPedidosE">
+                <input type="button" value="Ver Estadisticas" id="btnVerEstadísticasEmpresa">
+            </center>
+        </div>
+
+<!--Listado con solicitudes pendientes en perfil EMPRESA-->
+        <div id ="EmpresaslistadoSolicitudes" class="cuerpo"> 
+
+            <br><br><br>
+            <h3>LISTADO DE SOLICITUDES PENDIENTES</h3>
+            <br><br>
+            <div id="MensajeNoHabilitado"></div>
+            <br><br>
+            <table border="1" id="tablaSolicitudesPendientes">
+                <thead>
+                    <tr> 
+                        <th>PRODUCTO</th>
+                        <th>IMAGEN</th>
+                        <th>KM</th>
+                        <th>VEHICULO</th>
+                        <th>USUARIO</th>
+                        <th>ESTADO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody  id = "tablaSolicitudesPendientesEmpresa"> </tbody>	
+            </table>
+            <br><br><br>
+        </div>
+
+<!--Listado con solicitudes tomadas en perfil EMPRESA-->
+        <div id ="EmpresaslistadoSolicitudesTomadas" class="cuerpo">
+
+            <br><br><br>
+            <h3>LISTADO DE SOLICITUDES TOMADAS</h3>
+            <br><br>
+            <div id="MensajeNoHabilitado1"></div>
+            <br><br>
+            <table border="1" id = "tablaSolicitudesTomadas">
+                <thead>
+                    <tr> 
+                        <th>PRODUCTO</th>
+                        <th>IMAGEN</th>
+                        <th>KM</th>
+                        <th>VEHICULO</th>
+                        <th>USUARIO</th>
+                        <th>ESTADO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <br><br><br>
+                <tbody  id = "tablaSolicitudesTomadasEmpresa"> </tbody>   
+            </table>
+            <br>
+            <br><br><br>
+            <br><br><br> 
+        </div>
+
+<!--Información estadística perfil EMPRESA: persona con mas envíos y combo desplegable con envíos en tránsito / finalizado -->
+         <div   id ="EmpresasInformacionEstadistica" class="cuerpo"> 
+
+            <br><br><br>
+            <h3>INFORMACIÓN ESTADÍSTICA</h3>
+            <br><br>
+            <br><br><br>
+            <div id ="divInformacionEstadisticaEmpresa"></div>
+            <br><br>
+
+            <select id = "selectInfoEstadisticaEmpresa">
+                <option value="0">SELECCIONE OPCIÓN...</option>
+                <option value="1">EN TRÁNSITO</option>
+                <option value="2">FINALIZADO</option>
+            </select>
+            <input type="button" id="btnSelectInfoEstadisticaEmpresa" value="MOSTRAR">
+            <br><br><br>
+            <div id = "divSelectInfoEmpresa"></div>
+            <br>
+            <br><br><br>
+            <br><br><br> 
+    </div>
+    <br><br><br>
+    <hr>
+
+<!-- Footer con links para redes sociales de la empresa, telefono, ubicación -->
+    <footer id="contactos">       
+        <div class="container-footer-all">         
+             <div class="container-body"> 
+                 <div class="colum1">
+                     <h1>Mas informacion de la compañia</h1> 
+                     <p>Somos una empresa constituida hace más de 17 años como una empresa de transportes,  en búsqueda de la satisfacción total de nuestros clientes.</p>
+                     <br>
+                     <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.1227584102407!2d-56.192943684309526!3d-34.903368730382944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8032f2ec6a2b%3A0x20fd10ea401868bf!2sUniversidad%20ORT%20Uruguay%20(Campus%20Centro)!5e0!3m2!1ses-419!2suy!4v1636949247475!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>></iframe></div>
+                  </div>
+                  <div class="colum2">
+                      <h1>Redes Sociales</h1>
+                      <div class="rowdani">
+                         <img src="fotos/facebook.png">
+                         <label>Siguenos en Facebook</label>
+                     </div>
+                     <div class="rowdani">
+                         <img src="fotos/twitter.png">
+                         <label>Siguenos en Twitter</label>
+                     </div>
+                     <div class="rowdani">
+                         <img src="fotos/instagram.png">
+                         <label>Siguenos en Instagram</label>
+                     </div>
+                  </div>
+                  <div class="colum3">
+                      <h1>Informacion Contactos</h1>
+                      <div class="row2">
+                         <img src="fotos/house.png">
+                         <label>Montevideo, Departamento de Montevideo</label>
+                     </div>
+                     <div class="row2">
+                         <img src="fotos/smartphone.png">
+                         <label>2123-456-789</label>
+                     </div>
+                     <div class="row2">
+                         <img src="fotos/contact.png">
+                          <label>www.transportesFes.com</label>
+                     </div>
+                  </div>
+              </div>     
+         </div>    
+     </footer>
+
+<!-- Links a los archivos de js linkeados al HTML -->
+        <script type="text/javascript" src="claseAdmin.js"></script>
+        <script type="text/javascript" src="claseEmpresa.js"></script>
+        <script type="text/javascript" src="clasePersona.js"></script>
+        <script type="text/javascript" src="Validaciones.js"></script>
+        <script type="text/javascript" src="codigoObligatorio.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
